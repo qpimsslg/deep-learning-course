@@ -1,0 +1,66 @@
+Блок,Ноутбук,Данные,Результат и содержание,Метрики,Теги,Временные комментарии
+01,01_1_data_analysis,Titanic,"Графики, EDA, обработка пропусков, базовый предпроцессинг и масштабирование данных",-,"EDA
+missing-values
+one-hot encoding
+label encoding
+StandardScaler
+MinMaxScaler
+",
+01,01_2_intro_to_sklearn,Possum Regression,"sklearn: метрики (MSE/R2), KNN-регрессия, кросс-валидация, подбор гиперпараметров и сравнение моделей
+",MSE/R2,"KNN
+decision tree
+metrics
+overfitting
+cross-validation
+GridSearchCV","я прикрепила вопрос и свой ответ, разобраться"
+01,01_3_feature_engineering,Kaggle bank-issues-042022,"Пропуски + кодирование категорий, подготовка датасета под модель
+Итого: корректная обработка train/test, готовые признаки",MSE train/test,"EDA
+missing-values
+feature engeneering",нет обучения модели а должно быть!!!
+02,02_1_linear_regression,синтетика y=5x+6+noise,"Линрег: аналитическое решение и SGD; влияние batch size
+сравнение сходимости лосса, график предсказаний",loss curve,"EDA
+missing-values
+feature engeneering
+SDG",выложить
+02,02_2_regularization,diabetes + синтетика 1D,"L1/L2: Lasso/Ridge, как меняются веса при регуляризации
+Получили графики весов/траекторий",MSE train/test,"regularization
+L1
+L2
+ElasticNet",выложить
+02,02_3_logistic_regression,make_blobs (2 класса),Логрег через GD + визуализация вероятностей и границы,loss curve,logistic regression,выложить
+03,03_1_model_selection_ensembles.ipynb,"синтетика
+y=2x+3+noise,
+UCI Adult",Выбор модели: GridSearchCV+ пайплайн + ансамбли (bagging/boosting/stacking),ROC-AUC,"overfitting
+regularization
+cross-validation
+pipeline ml tasks
+one-hot encoding
+
+GridSearchCV
+KNN
+decision tree
+random forest
+stacking
+boosting",выложить
+04,04_1_PyTorch_intro,make_blobs (2 класса),"Нейронные сети. Реализованы циклы обучения (полный GD и mini-batch), optimizer",loss curve,"PyTorch
+ANN
+nn.Module
+autograd
+BCELoss
+SGD
+nn.Sequential
+optimizer
+Adam
+DataLoader
+training loop",выложить
+05,05_1_convolution_pooling.ipynb,-,"Введение в сверточные нейронные сети: применение разных фильтров, пулинг (max, average)
+На выходе получаем параметры модели",-,"CNN
+convolution
+pooling
+stride
+padding",выложить
+05,05_2_creating_module.ipynb,игрушка дьявола,"Просто обучение модели, nn.Module",loss curve,"CNN
+convolution
+pooling
+DataLoader",можно добавить метрику?
+05,05_3_convnet_pytorch.ipynb,"MNIST, CIFAR","Сверточные нейронные сети: архитектура, обучение, accuracy по классам",Accuracy / Accuracy per class,CNN,доделать
