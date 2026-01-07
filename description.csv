@@ -1,66 +1,120 @@
 Блок,Ноутбук,Данные,Результат и содержание,Метрики,Теги,Временные комментарии
-01,01_1_data_analysis,Titanic,"Графики, EDA, обработка пропусков, базовый предпроцессинг и масштабирование данных",-,"EDA
-missing-values
-one-hot encoding
-label encoding
+1. Основы машинного обучения,01_1_data_analysis.ipynb,Titanic,"Графики, EDA, обработка пропусков, базовый предпроцессинг и масштабирование данных",-,"EDA
+Missing values
+One-hot encoding
+Label encoding
 StandardScaler
 MinMaxScaler
-",
-01,01_2_intro_to_sklearn,Possum Regression,"sklearn: метрики (MSE/R2), KNN-регрессия, кросс-валидация, подбор гиперпараметров и сравнение моделей
+",+
+1. Основы машинного обучения,01_2_intro_to_sklearn.ipynb,Possum Regression,"Sklearn: метрики (MSE/R2), KNN-регрессия, кросс-валидация, подбор гиперпараметров и сравнение моделей
 ",MSE/R2,"KNN
-decision tree
-metrics
-overfitting
-cross-validation
-GridSearchCV","я прикрепила вопрос и свой ответ, разобраться"
-01,01_3_feature_engineering,Kaggle bank-issues-042022,"Пропуски + кодирование категорий, подготовка датасета под модель
+Decision tree
+Metrics
+Overfitting
+Cross-validation
+GridSearchCV",+
+1. Основы машинного обучения,01_3_feature_engineering.ipynb,Kaggle bank-issues-042022,"Пропуски + кодирование категорий, подготовка датасета под модель
 Итого: корректная обработка train/test, готовые признаки",MSE train/test,"EDA
-missing-values
-feature engeneering",нет обучения модели а должно быть!!!
-02,02_1_linear_regression,синтетика y=5x+6+noise,"Линрег: аналитическое решение и SGD; влияние batch size
-сравнение сходимости лосса, график предсказаний",loss curve,"EDA
-missing-values
-feature engeneering
-SDG",выложить
-02,02_2_regularization,diabetes + синтетика 1D,"L1/L2: Lasso/Ridge, как меняются веса при регуляризации
-Получили графики весов/траекторий",MSE train/test,"regularization
+Missing values
+Feature engeneering","нет обучения модели а должно быть!!!
+надо обработать living region для тестового датасета"
+1. Основы машинного обучения,HW1_game_of_thrones.ipynb,Игра Престолов: A Wiki of Ice and Fire ,"Предсказание выживаемости персонажа, обработка признаков",Accuracy,"EDA
+Missing values
+Feature engeneering
+GridSearchCV
+
+Logistic Regression
+Random Forest
+Ada Boost
+Gaussian Process Classifier
+GaussianNB
+KNN
+SVC Decision
+Tree Classifier
+",+
+2. Линейные модели,02_1_linear_regression.ipynb,синтетика y=5x+6+noise,"Линрег: аналитическое решение и SGD; влияние batch size
+сравнение сходимости лосса, график предсказаний",Loss curve,"EDA
+Missing values
+Feature engeneering
+SDG",+
+2. Линейные модели,02_2_regularization.ipynb,diabetes + синтетика 1D,"L1/L2: Lasso/Ridge, как меняются веса при регуляризации
+Получили графики весов/траекторий",MSE train/test,"Regularization
 L1
 L2
-ElasticNet",выложить
-02,02_3_logistic_regression,make_blobs (2 класса),Логрег через GD + визуализация вероятностей и границы,loss curve,logistic regression,выложить
-03,03_1_model_selection_ensembles.ipynb,"синтетика
+ElasticNet",+
+2. Линейные модели,02_3_logistic_regression.ipynb,make_blobs (2 класса),Логрег через GD + визуализация вероятностей и границы,Loss curve,Logistic Regression,+
+2. Линейные модели,HW2_linear_models.ipynb,"make_blobs (2 класса)
+MNIST (2 класса - 0 и 1)","Градиентный спуск: написание функции для его реализации, построение графиков
+Функция для генерации батчей (SGD)
+Реализация своего класса лог регрессии (+ с регуляризацией)",Accuracy,"Gradient descent
+Generate batches
+Logistic Regression
+Regularization",+
+3. Композиции алгоритмов и выбор модели,03_1_model_selection_ensembles.ipynb,"синтетика
 y=2x+3+noise,
-UCI Adult",Выбор модели: GridSearchCV+ пайплайн + ансамбли (bagging/boosting/stacking),ROC-AUC,"overfitting
-regularization
-cross-validation
-pipeline ml tasks
-one-hot encoding
+UCI Adult",Выбор модели: GridSearchCV+ пайплайн + ансамбли (bagging/boosting/stacking),ROC-AUC,"Overfitting
+Regularization
+Cross-validation
+Pipeline ml tasks
+One-hot encoding
 
 GridSearchCV
 KNN
-decision tree
-random forest
-stacking
-boosting",выложить
-04,04_1_PyTorch_intro,make_blobs (2 класса),"Нейронные сети. Реализованы циклы обучения (полный GD и mini-batch), optimizer",loss curve,"PyTorch
+Decision tree
+Random forest
+Stacking
+Boosting",+
+3. Композиции алгоритмов и выбор модели,HW3_kaggle.ipynb,Отток пользователей (датасет на kaggle),"Предсказание оттока пользователей, обработка данных, применение линейных моделей, бустинг",ROC-AUC,"EDA
+Gradient boosting",+
+4. Введение в нейронные сети,04_1_PyTorch_intro.ipynb,make_blobs (2 класса),"Нейронные сети. Реализованы циклы обучения (полный GD и mini-batch), optimizer",Loss curve,"PyTorch
 ANN
 nn.Module
-autograd
+Autograd
 BCELoss
 SGD
 nn.Sequential
-optimizer
+Optimizer
 Adam
 DataLoader
-training loop",выложить
-05,05_1_convolution_pooling.ipynb,-,"Введение в сверточные нейронные сети: применение разных фильтров, пулинг (max, average)
+Training loop",+
+5. Сверточные нейронные сети,05_1_convolution_pooling.ipynb,-,"Введение в сверточные нейронные сети: применение разных фильтров, пулинг (max, average)
 На выходе получаем параметры модели",-,"CNN
-convolution
-pooling
-stride
-padding",выложить
-05,05_2_creating_module.ipynb,игрушка дьявола,"Просто обучение модели, nn.Module",loss curve,"CNN
-convolution
-pooling
+Convolution
+Pooling
+Stride
+Padding",+
+5. Сверточные нейронные сети,05_2_creating_module.ipynb,игрушка дьявола,"Просто обучение модели, nn.Module",Loss curve,"CNN
+Convolution
+Pooling
 DataLoader",можно добавить метрику?
-05,05_3_convnet_pytorch.ipynb,"MNIST, CIFAR","Сверточные нейронные сети: архитектура, обучение, accuracy по классам",Accuracy / Accuracy per class,CNN,доделать
+5. Сверточные нейронные сети,05_3_convnet_pytorch.ipynb,"MNIST, CIFAR","Сверточные нейронные сети: архитектура, обучение, accuracy по классам",Accuracy / Accuracy per class,CNN,доделать
+5. Сверточные нейронные сети,HW_4_conv_cnn.ipynb,,,,,доделать! в цикле to device
+6. Продвинутое обучение нейросетей,06_1_pytorch_bn_dropout.ipynb,CIFAR,"CNN: обучаем модель, сравниванием с 2 моделями - с батчнорм и с дропаут",Accuracy / loss curve,"CNN
+BatchNorm
+Dropout",выложить
+6. Продвинутое обучение нейросетей,06_2_pytorch_optimizers.ipynb,CIFAR,"CNN: обучаем модель, сравниванием с 3 моделями - с оптимизацией Adam, с Weight Decay и LR scheduling",Accuracy / loss curve,"CNN
+Adam
+Weight Decay
+LR scheduling",выложить
+7. Архитектуры CNN и Fine-Tuning,07_1_conv_net_optimization.ipynb,CIFAR,"CNN: обучаем модель, экспериментируем с с батчнормом и аугментацией данных",Accuracy / loss curve,"CNN
+BatchNorm
+Augmentation
+",выложить
+7. Архитектуры CNN и Fine-Tuning,07_2_transfer_learning.ipynb,Пчелы vs муравьи,Transfer Learning: дообучение нейронных сетей с использованием заморозки,Accuracy / loss curve,"Transfer Learning
+AlexNet
+ResNet
+Freezing
+Feature extractor",сделано
+7. Архитектуры CNN и Fine-Tuning,HW_5 классификация симпсонов ,Симпсоны,,,,
+8. Семантическая сегментация,08_1_semantic_segmentation.ipynb,,,,,
+8. Семантическая сегментация,HW_6 сегментация изображений,,,,,
+9. Основы области Explainable AI,09_1_xai_seminar.ipynb,,,,,
+10. Детекция объектов,10_1_formats_and_libraries_for_detection.ipynb,,,,,
+10. Детекция объектов,10_2_detector_from_scratch.ipynb,,,,,
+10. Детекция объектов,HW_7 Детекция объектов,,,,,
+11. Генеративные модели и автоэнкодеры,11_1_generative_models_timeseries.ipynb,,,,,
+11. Генеративные модели и автоэнкодеры,11_2_vae.ipynb,,,,,
+11. Генеративные модели и автоэнкодеры,HW_8 автоэнкодеры,,,,,
+12. Генеративно-состязательные сети,12_1_gan.ipynb,,,,,
+12. Генеративно-состязательные сети,12_2_stylegan_inversion.ipynb,,,,,
+12. Генеративно-состязательные сети,HW_9 обучение GAN,,,,,
