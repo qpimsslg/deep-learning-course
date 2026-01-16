@@ -32,25 +32,25 @@ KNN
 SVC Decision
 Tree Classifier
 ",+
-2. Линейные модели,02_1_linear_regression.ipynb,синтетика y=5x+6+noise,"Линрег: аналитическое решение и SGD; влияние batch size
+2. Линейные модели,02_1_linear_regression.ipynb,Синтетика y=5x+6+noise,"Линрег: аналитическое решение и SGD; влияние batch size
 сравнение сходимости лосса, график предсказаний",Loss curve,"EDA
 Missing values
 Feature engeneering
 SDG",+
-2. Линейные модели,02_2_regularization.ipynb,diabetes + синтетика 1D,"L1/L2: Lasso/Ridge, как меняются веса при регуляризации
+2. Линейные модели,02_2_regularization.ipynb,Diabetes + синтетика 1D,"L1/L2: Lasso/Ridge, как меняются веса при регуляризации
 Получили графики весов/траекторий",MSE train/test,"Regularization
 L1
 L2
 ElasticNet",+
-2. Линейные модели,02_3_logistic_regression.ipynb,make_blobs (2 класса),Логрег через GD + визуализация вероятностей и границы,Loss curve,Logistic Regression,+
-2. Линейные модели,HW2_linear_models.ipynb,"make_blobs (2 класса)
+2. Линейные модели,02_3_logistic_regression.ipynb,Make_blobs (2 класса),Логрег через GD + визуализация вероятностей и границы,Loss curve,Logistic Regression,+
+2. Линейные модели,HW2_linear_models.ipynb,"Make_blobs (2 класса)
 MNIST (2 класса - 0 и 1)","Градиентный спуск: написание функции для его реализации, построение графиков
 Функция для генерации батчей (SGD)
 Реализация своего класса лог регрессии (+ с регуляризацией)",Accuracy,"Gradient descent
 Generate batches
 Logistic Regression
 Regularization",+
-3. Композиции алгоритмов и выбор модели,03_1_model_selection_ensembles.ipynb,"синтетика
+3. Композиции алгоритмов и выбор модели,03_1_model_selection_ensembles.ipynb,"Синтетика
 y=2x+3+noise,
 UCI Adult",Выбор модели: GridSearchCV+ пайплайн + ансамбли (bagging/boosting/stacking),ROC-AUC,"Overfitting
 Regularization
@@ -66,7 +66,7 @@ Stacking
 Boosting",+
 3. Композиции алгоритмов и выбор модели,HW3_kaggle.ipynb,Отток пользователей (датасет на kaggle),"Предсказание оттока пользователей, обработка данных, применение линейных моделей, бустинг",ROC-AUC,"EDA
 Gradient boosting",+
-4. Введение в нейронные сети,04_1_PyTorch_intro.ipynb,make_blobs (2 класса),"Нейронные сети. Реализованы циклы обучения (полный GD и mini-batch), optimizer",Loss curve,"PyTorch
+4. Введение в нейронные сети,04_1_PyTorch_intro.ipynb,Make_blobs (2 класса),"Нейронные сети. Реализованы циклы обучения (полный GD и mini-batch), optimizer",Loss curve,"PyTorch
 ANN
 nn.Module
 Autograd
@@ -83,31 +83,47 @@ Convolution
 Pooling
 Stride
 Padding",+
-5. Сверточные нейронные сети,05_2_creating_module.ipynb,игрушка дьявола,"Просто обучение модели, nn.Module",Loss curve,"CNN
+5. Сверточные нейронные сети,05_2_creating_module.ipynb,Игрушка дьявола,"Просто обучение модели, nn.Module",Loss curve,"CNN
 Convolution
 Pooling
-DataLoader",можно добавить метрику?
+DataLoader",+
 5. Сверточные нейронные сети,05_3_convnet_pytorch.ipynb,"MNIST, CIFAR","Сверточные нейронные сети: архитектура, обучение, accuracy по классам",Accuracy / Accuracy per class,CNN,доделать
 5. Сверточные нейронные сети,HW_4_conv_cnn.ipynb,,,,,доделать! в цикле to device
 6. Продвинутое обучение нейросетей,06_1_pytorch_bn_dropout.ipynb,CIFAR,"CNN: обучаем модель, сравниванием с 2 моделями - с батчнорм и с дропаут",Accuracy / loss curve,"CNN
 BatchNorm
-Dropout",выложить
+Dropout",+
 6. Продвинутое обучение нейросетей,06_2_pytorch_optimizers.ipynb,CIFAR,"CNN: обучаем модель, сравниванием с 3 моделями - с оптимизацией Adam, с Weight Decay и LR scheduling",Accuracy / loss curve,"CNN
 Adam
 Weight Decay
-LR scheduling",выложить
+LR scheduling",+
 7. Архитектуры CNN и Fine-Tuning,07_1_conv_net_optimization.ipynb,CIFAR,"CNN: обучаем модель, экспериментируем с с батчнормом и аугментацией данных",Accuracy / loss curve,"CNN
 BatchNorm
 Augmentation
-",выложить
+",+
 7. Архитектуры CNN и Fine-Tuning,07_2_transfer_learning.ipynb,Пчелы vs муравьи,Transfer Learning: дообучение нейронных сетей с использованием заморозки,Accuracy / loss curve,"Transfer Learning
 AlexNet
 ResNet
 Freezing
-Feature extractor",сделано
-7. Архитектуры CNN и Fine-Tuning,HW_5 классификация симпсонов ,Симпсоны,,,,
-8. Семантическая сегментация,08_1_semantic_segmentation.ipynb,,,,,
-8. Семантическая сегментация,HW_6 сегментация изображений,,,,,
+Feature extractor
+Problems with catalyst
+Training loop",+
+7. Архитектуры CNN и Fine-Tuning,HW5_simpsons_classification.ipynb,Симпсоны,"Построение базового решения для классификации, работа с несбалансированностью классов, применение методов Transfer learning",F1-score,"Transfer Learning
+AlexNet
+ResNet
+Freezing
+Feature extractor
+Training loop
+Augmentation",+
+8. Семантическая сегментация,08_1_semantic_segmentation.ipynb,Lyft Udacity (4 класса из 13),Задача 4-классовой сегментации проезжей части,IoU ,"IoU
+SegNet
+Upsampling
+Segmentation",+
+8. Семантическая сегментация,HW_6 сегментация изображений,ADDI project,"Задача сегментации медицинских снимков, построение архитектуры нейросетей, работа с лоссами","IoU, Dice, Focal, Tversky","IoU
+Dice
+Focal
+Tversky
+SegNet
+UNet",+
 9. Основы области Explainable AI,09_1_xai_seminar.ipynb,,,,,
 10. Детекция объектов,10_1_formats_and_libraries_for_detection.ipynb,,,,,
 10. Детекция объектов,10_2_detector_from_scratch.ipynb,,,,,
